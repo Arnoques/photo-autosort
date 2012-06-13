@@ -5,7 +5,7 @@ Introduction
 ------------
 Did you ever go on a trip with friends/family and each of you took
 pictures in their own cameras? Did you found out after the fact that the
-camera dates were wrong? How did you sorted them by datetime (if you ever
+camera dates were wrong? How did you sort them by datetime? (if you ever
 did?)
 
 This is a very simpe script to help you sort pictures from different
@@ -16,21 +16,21 @@ To use:
 -------
 1. make a root folder, with no pictures
 2. make one subfolder for each camera, with all its pictures
-When you execute this script, it creates a list of pictures with its
-timestamp (DateTimeOriginal) in the root folder and a playlist to see the
-order in which the pictures will be sorted.
+3. When you execute the first part of the script, it creates a list of
+pictures with its timestamp (DateTimeOriginal) in the root folder and a
+playlist to see the order in which the pictures will be sorted.
 
 The playlist can be seen with, for example, the following command line:
 $feh --full-screen --auto-zoom --quiet --hide-pointer --filelist playlist.txt
 or any other program that allows a playlist of pictures.
 
-After verifying that the order is fine, execute the second part of the
+4. After verifying that the order is fine, execute the second part of the
 script. It will *NOT* touch your original pictures, just make a copy of
 them.
-
-If the order is wrong, make a "delay.txt" file in each desired subfolder
+5. If the order is wrong, make a "delay.txt" file in each desired subfolder
 with the timeshift of the camera (format is yyyy:MM:dd hh:mm:ss). This
-time will be added to all pictures in that subfolder.
+time will be added to all pictures in that subfolder when you execute again
+the first part of the script.
 
 Requirements
 ------------
