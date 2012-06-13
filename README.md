@@ -19,11 +19,6 @@ To use:
 3. When you execute the first part of the script, it creates a list of
 pictures with its timestamp (DateTimeOriginal) in the root folder and a
 playlist to see the order in which the pictures will be sorted.
-
-The playlist can be seen with, for example, the following command line:
-$feh --full-screen --auto-zoom --quiet --hide-pointer --filelist playlist.txt
-or any other program that allows a playlist of pictures.
-
 4. After verifying that the order is fine, execute the second part of the
 script. It will *NOT* touch your original pictures, just make a copy of
 them.
@@ -31,6 +26,11 @@ them.
 with the timeshift of the camera (format is yyyy:MM:dd hh:mm:ss). This
 time will be added to all pictures in that subfolder when you execute again
 the first part of the script.
+
+The playlist can be seen with, for example, the following command line:
+$feh --full-screen --auto-zoom --quiet --hide-pointer --filelist playlist.txt
+or any other program that allows a playlist of pictures.
+
 
 Requirements
 ------------
